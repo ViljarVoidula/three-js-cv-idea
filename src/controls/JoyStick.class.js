@@ -69,7 +69,7 @@ export default class JoyStick{
 		this.domElement.style.left = `${left + this.domElement.clientWidth/2}px`;
 		
 		const forward = -(top - this.origin.top + this.domElement.clientHeight/2)/this.maxRadius;
-		const turn = (left - this.origin.left + this.domElement.clientWidth/2)/this.maxRadius;
+		const turn = -(left - this.origin.left + this.domElement.clientWidth/2)/this.maxRadius;
 		console.log('forward: ', forward);
 		console.log('turn: ', forward);
 		if (this.onMove!=undefined) this.onMove.call(this.game, forward, turn);

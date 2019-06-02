@@ -182,6 +182,8 @@ export default class Game{
 			
 		window.addEventListener( 'resize', function(){ game.onWindowResize(); }, false );
 
+		
+
 		// stats
 		if (this.debug){
 			this.stats = new Stats();
