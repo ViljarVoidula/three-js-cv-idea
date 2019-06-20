@@ -193,7 +193,7 @@ export default class Game{
 
 	playerControl(forward, turn){
 		//console.log(`playerControl(${forward}), ${turn}`);
-        
+  
 		if (forward>0){
 			if (this.player.action!='walk') this.action = 'walk';
 		}else{
@@ -360,6 +360,7 @@ export default class Game{
 		requestAnimationFrame( function(){ game.animate(); } );
 		
 		if (this.player.mixer!=undefined && this.mode==this.modes.ACTIVE) this.player.mixer.update(dt);
+		
 		
 		if (this.player.move!=undefined){
 			if (this.player.move.forward>0) this.player.object.translateZ(dt*100);
