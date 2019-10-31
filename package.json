@@ -9,7 +9,7 @@
     "build": "webpack -p --progress --mode production --config webpack.config.build.js"
   },
   "dependencies": {
-    "lodash": "4.17.11",
+    "lodash": "4.17.13",
     "three": "^0.105.1"
   },
   "devDependencies": {
